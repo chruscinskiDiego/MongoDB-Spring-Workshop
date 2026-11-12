@@ -1,28 +1,28 @@
-# Workshop Spring Boot e MongoDB
+# Spring Boot and MongoDB workshop
 
-API de estudo em Java para trabalhar com usuários e publicações, utilizando Spring Boot e persistência em MongoDB.
+Java practice API for users and posts, built with Spring Boot and MongoDB persistence.
 
-## Recursos
+## Features
 
-- Consulta e manutenção de usuários.
-- Consulta de publicações e busca por título.
-- Relação entre usuários e suas publicações.
-- Organização em resources, services, repositories, domínio e DTOs.
+- User queries and management.
+- Post queries and title search.
+- Relationships between users and posts.
+- Separation into resources, services, repositories, domain models and DTOs.
 
-## Executar localmente
+## Run locally
 
-1. Instale JDK 17 e Maven, conforme pom.xml.
-2. Disponibilize um MongoDB local e ajuste a URI em src/main/resources/application.properties.
-3. Na raiz, execute:
+1. Install JDK 17 and Maven, as specified in pom.xml.
+2. Start a local MongoDB instance and adjust the URI in src/main/resources/application.properties.
+3. Run from the repository root:
 
 ```bash
 sh mvnw spring-boot:run
 ```
 
-## Explorar a API
+## Explore the API
 
-Os recursos principais são /users e /posts. Consulte os resources em src/main/java para os métodos e parâmetros disponíveis.
+The main resources are /users and /posts. Refer to the resource classes under src/main/java for available methods and parameters.
 
-## Escopo
+## Scope
 
-Workshop de persistência orientada a documentos e APIs REST. A inicialização e os endpoints não foram executados nesta revisão; revise a configuração do banco antes de testar.
+A workshop on document persistence and REST APIs. Review the database configuration before testing the application.
